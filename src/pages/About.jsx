@@ -1,12 +1,12 @@
 import React from "react";
-import zanePic from "../images/zprofilepic.jpg"
+import wavesPic from "../images/waves.jpg"
 
 const About = () =>{
     return(
         <>
         <h2>About</h2>
         <p>More content coming soon...</p>
-        <img src={zanePic} alt="A close-up of a person smiling" className="about-image" />
+        <img src={wavesPic} alt="A stack of hay bales" className="about-image" />
         </>
     )
 }
