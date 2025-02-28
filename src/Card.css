@@ -1,0 +1,43 @@
+/* Card.css - work in progress... for responsive design on smaller devices (to replace the style code in MenuCard.jsx)*/
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  
+  .menu-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .menu-card ul {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-card {
+      width: 100%;
+      margin: 0 10px;
+    }
+  
+    .menu-card h3 {
+      font-size: 1rem;
+    }
+  
+    .menu-card ul {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-card {
+      padding: 8px;
+    }
+  
+    .menu-card h3 {
+      font-size: 1rem;
+    }
+  }
