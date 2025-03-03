@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ExtrasCard = ({ cardTitle, cardContent, buttonText }) => {
+const JokeCard = ({ cardTitle, cardContent, buttonText }) => {
   const [currentColor, setCurrentColor] = useState("coral");
 
   const changeColor = () => {
@@ -15,7 +15,7 @@ const ExtrasCard = ({ cardTitle, cardContent, buttonText }) => {
         <p style={titleStyle}>{cardTitle}</p>
       </div>
       <div style={{ ...contentBoxStyle, backgroundColor: currentColor }}>
-        <ul>{[cardContent]}</ul>
+        <ul>{cardContent}</ul>
       </div>
       <button onClick={changeColor} style={buttonStyle}>
         {buttonText}
@@ -59,21 +59,19 @@ const titleStyle = {
 };
 
 const buttonStyle = {
-  width: "670px", // Should be the same width as the box but have had to increase the size sligthly to match these
+  width: "667px", // Should be the same width as the box but have had to increase the size sligthly to match these
   height: "40px", // button height
+  fontSize: "17px",
+  fontFamily: "Courier New",
+  fontWeight: "bold",
   cursor: "pointer",
+  border: "1px solid dark green", // Standard border
   borderRadius: "5px",
   backgroundColor: "lightgray",
   color: "dark green",
   margin: "0 20px",
   marginBottom: "0px", // Remove space between button and box
   padding: "10px",
-  fontSize: "1rem",
-  color: "#fff",
-  backgroundColor: "#ff6347",
-  border: "none",
-  cursor: "pointer",
-  transition: "background-color 0.3s ease",
 };
 
 const contentBoxStyle = {
@@ -94,4 +92,4 @@ const contentBoxStyle = {
   // animation: "cycleBackground 20s infinite",
 };
 
-export default ExtrasCard;
+export default JokeCard;

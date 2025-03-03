@@ -65,7 +65,8 @@ const containerStyle = {
     fontSize: "16px",
     padding: "10px",
     margin: "0 auto", // Center horizontally
-    backgroundColor: "#c6e0d8"
+    backgroundColor: "#c6e0d8",
+    color: "#010605"
   };
 
 export default Card;
