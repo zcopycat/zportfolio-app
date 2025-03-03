@@ -35,6 +35,27 @@
     color: #ff6347; /* Tomato color */
   }
 
+  .darkmode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Space out the logo and the links */
+    align-items: center; /* Vertically center the items */
+    padding: 3px;
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #d9e5e7;
+    text-align: center;
+  }
+  
+  .inputBox {
+    cursor: pointer;
+  }
+
+  .inputBox a:hover {
+    background-color: #ff6347;
+  }
+  
   .logo-img {
     height: auto; /* Maintain aspect ratio */
     width: 100px; /* Set a fixed width (adjust as needed) */

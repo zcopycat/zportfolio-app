@@ -5,25 +5,50 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgb(114, 208, 177);
+  /* background-color: #72d0b1; */
+  /* for the theme */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+[data-theme="light"] {
+  --bg-color: #72d0b1;
+  --text-color: #010605;
+}
+
+[data-theme="dark"] {
+  --bg-color: #010605;
+  --text-color: azure;
 }
 
 h1 {
   display: flex;
   justify-content: center;
-  margin-top: 30px
+  margin-top: 30px;
+  font-size: 2.5rem;
+  color: #535050;
+  margin-bottom: 10px;
 }
 
 h2 {
   display: flex;
   justify-content: center;
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 h3 {
   display: flex;
   justify-content: padding-left;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
 }
 
 .containerRow {
@@ -63,6 +88,8 @@ h3 {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  text-align: center;
+  border-radius: 8px;
 }
 
 .contentContact {
@@ -71,13 +98,16 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
+.contact-page {
+  padding: 20px;
+  /* General styling for the contact page */
+}
 
 .myCard {
-  width:500px;
-  height:auto;
+  width: 500px;
+  height: auto;
   background-color: rgb(231, 235, 223);
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -90,34 +120,54 @@ h3 {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  color: dark rgb(1, 6, 5);
+  color: dark #010605;
   /* animation: cycleBackground 20s infinite; */
 }
 
 @keyframes cycleBackground {
-  0% { background-color: orange; }
-  25% { background-color: tomato; }
-  50% { background-color: aquamarine; }
-  75% { background-color: rgb(255, 157, 0); }
-  100% { background-color: turquoise; }
+  0% {
+    background-color: orange;
+  }
+  25% {
+    background-color: tomato;
+  }
+  50% {
+    background-color: aquamarine;
+  }
+  75% {
+    background-color: rgb(255, 157, 0);
+  }
+  100% {
+    background-color: turquoise;
+  }
 }
 
 @keyframes scrollText {
-0% { transform: translateX(100%); }
-25% { color: mediumseagreen; }
-  50% { color: peru; }
-  75% { color: yellow; }
-100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%);
+  }
+  25% {
+    color: mediumseagreen;
+  }
+  50% {
+    color: peru;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 #marquee {
-white-space: nowrap;
-overflow: hidden;
-position: absolute;
-width: 100%;
-font-size: 16px; 
-font-weight: italic; 
-animation: scrollText 60s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+  font-weight: italic;
+  animation: scrollText 60s linear infinite;
 }
 
 .about-image {
@@ -127,4 +177,31 @@ animation: scrollText 60s linear infinite;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 30px;
+}
+
+.app-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff6347; /* Tomato color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.app-button:hover {
+  background-color: #ff4500; /* OrangeRed color */
+}
+
+.joke-input {
+  padding: 10px 20px;
+  font-size: 1rem;
+  width: 300px;
+  color: #010605;
+  background-color: #f3ebea; /* Tomato color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
