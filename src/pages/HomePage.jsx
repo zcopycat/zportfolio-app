@@ -27,7 +27,7 @@ const HomePage = () => {
           <p>Reid Hoffman, LinkedIn founder, 2025</p>
           <Link to="/About">
             <button className="menu-button">
-              How can I help achieve future enhancement?
+              How can I help maximise human flourishing?
             </button>
           </Link>
         </div>
