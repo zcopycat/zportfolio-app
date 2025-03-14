@@ -24,7 +24,7 @@ export async function fetchJoke(jokeKeyWord) {
     })
     .catch((error) => {
       console.error("Error fetching joke data:", error);
-      return "Error fetching joke data";
+      return "Error fetching joke data. Please try another key word.";
       // throw error
     });
 

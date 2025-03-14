@@ -7,13 +7,13 @@ const Extras = () => {
   const extras = [
     {
       id: 1,
-      name: "Extra 1",
+      name: "Project 1",
       timeline: "...",
       description: "Details coming soon",
     },
     {
       id: 2,
-      name: "Extra 2",
+      name: "Project 2",
       timeline: "...",
       description: "Details coming soon",
     },
@@ -22,11 +22,11 @@ const Extras = () => {
   return (
     <>
       <ExtrasCard
-        cardTitle={"Coming Soon... Very soon... Very very soon..."}
+        cardTitle={"More projects to follow..."}
         cardContent={extras.map((extra) => (
           <ExtraItem key={extra.id} extra={extra} />
         ))}
-        buttonText={"Click to change colour! Just because."}
+        buttonText={"Click to change card colour"}
       />
     </>
   );

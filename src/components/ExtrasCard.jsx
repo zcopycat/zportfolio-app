@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const ExtrasCard = ({ cardTitle, cardContent, buttonText }) => {
-  const [currentColor, setCurrentColor] = useState("coral");
+  const [currentColor, setCurrentColor] = useState("darkcyan");
 
   const changeColor = () => {
     const response = prompt("Type a colour!");
@@ -53,7 +53,7 @@ const titleStyle = {
   position: "absolute",
   width: "100%",
   fontSize: "35px",
-  fontFamily: "Courier New",
+  fontFamily: "Raleway",
   animation: "scrollText 12s linear infinite",
   fontWeight: "bold",
 };
@@ -63,16 +63,13 @@ const buttonStyle = {
   height: "40px", // button height
   cursor: "pointer",
   borderRadius: "5px",
-  backgroundColor: "lightgray",
-  color: "dark green",
   margin: "0 20px",
   marginBottom: "0px", // Remove space between button and box
   padding: "10px",
-  fontSize: "1rem",
+  fontSize: "1.1rem",
   color: "#fff",
-  backgroundColor: "#ff6347",
+  backgroundColor: "#1d2627",
   border: "none",
-  cursor: "pointer",
   transition: "background-color 0.3s ease",
 };
 
