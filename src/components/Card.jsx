@@ -21,6 +21,7 @@ const containerStyle = {
   alignItems: "start", // position horizontally
   height: "auto", // Full viewport height
   width: "100%",
+  margin: "0 1rem",
 };
 
 const titleBoxStyle = {
@@ -28,14 +29,14 @@ const titleBoxStyle = {
   alignItems: "center",
   // justifyContent: "center",
   width: "100%", // Same width as the box
-  maxWidth: "600px",
+  maxWidth: "50vw",
   height: "30px", // button height
   border: "1px solid dark green", // Standard border
   borderRadius: "5px",
   backgroundColor: "#1d2627",
   margin: "0 auto", // Center horizontally with margin auto
   marginBottom: "0px", // Remove space between button and box
-  padding: "10px",
+  padding: "0.7rem",
 };
 
 const titleStyle = {
@@ -46,14 +47,14 @@ const titleStyle = {
   margin: "0",
   padding: "3px",
   width: "100%",
-  fontFamily: "Raleway",
+  fontFamily: "Funnel Display",
   color: "#d9e5e7",
   fontSize: "1.3rem", // Use relative font size
 };
 
 const contentBoxStyle = {
   width: "100%", // Full width of parent
-  maxWidth: "600px", // Limit maximum width for content
+  maxWidth: "50vw", // Limit maximum width for content
   height: "auto",
   display: "flex",
   flexDirection: "column", // Stack items vertically
