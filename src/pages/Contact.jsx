@@ -2,25 +2,6 @@ import React from "react";
 // import React, { useState, useEffect } from "react";
 
 const ContactLinks = () => {
-  // const [backgroundColor, setBackgroundColor] = useState("#72d0b1");
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 10) {
-  //       setBackgroundColor("tomato");
-  //     } else {
-  //       setBackgroundColor("#72d0b1");
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll); // Cleanup event listener
-  //   };
-  // }, []);
-
-  //Add where applicable: style={{ backgroundColor }}
-
   return (
     <div className="content-top-margin">
       <div className="contact-page">
