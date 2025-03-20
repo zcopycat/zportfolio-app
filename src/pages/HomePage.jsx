@@ -3,34 +3,51 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import Navbar from '../components/routing/NavBar';
 import "../HomePage.css";
-import wavesPic from "../images/waves.jpg";
+import cloudsClip from "../images/clouds.mp4";
 
-const HomePage = () => {
+const HomePage = ({ aboutRef, scrollToSection }) => {
   return (
     <div className="home-page">
-      {/* <Navbar /> */}
-      <div className="content">
-        <img
-          src={wavesPic}
-          alt="Sea waves crushing on the shore"
-          className="homepage-image"
+      <div className="hero-container">
+        <video
+          src={cloudsClip}
+          alt="Sunset with soft dark clouds moving high above gentle sea waters"
+          className="hero-image"
+          autoPlay
+          loop
+          muted
         />
-        <div className="welcome-message">
-          <h2>Embracing the Change</h2>
-          <p>
+        <div className="hero-h2-position">
+          <h2 className="glow">Hello World!</h2>
+        </div>
+        {/* <button
+          className="hero-button"
+          onClick={() => scrollToSection(aboutRef)}
+        >
+          How can I support human flourishing?
+        </button> */}
+        <div className="hero-message">
+          <button
+            className="hero-button"
+            onClick={() => scrollToSection(aboutRef)}
+          >
+            How can I improve what matters?
+          </button>
+          {/* <p>
             "AI expands our ability to act and make choices. It has the power to
             enhance both Negative and Positive Liberty, pushing humanity to an
             inflection point. The challenge now is to design AI tools that
             synthesize these freedoms, unlocking a future where technology
             maximizes human flourishing."
           </p>
-          <p>Reid Hoffman, LinkedIn founder, 2025</p>
-          <Link to="/About">
-            <button className="menu-button">
-              How can I help maximise human flourishing?
-            </button>
-          </Link>
+          <p> - Reid Hoffman, LinkedIn founder, 2025</p> */}
         </div>
+        {/* <button
+          className="hero-button"
+          onClick={() => scrollToSection(aboutRef)}
+        >
+          How can I improve what matters?
+        </button> */}
       </div>
     </div>
   );

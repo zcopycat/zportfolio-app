@@ -12,14 +12,15 @@ const ExtrasPage = () => {
           <ExtrasCard
             cardTitle={"Here's a joke... "}
             cardContent={<ExtraJokeLive />}
-            buttonText={"Click to change card colour"}
+            buttonText={"Change card colour"}
             className="containerColumn"
           />
-          <div className="containerColumnB">
+          {/* <div className="containerColumnB">
             <Extras />
-          </div>
+          </div> */}
         </div>
       </div>
+      <h3>More new projects coming soon...</h3>
     </div>
   );
 };
